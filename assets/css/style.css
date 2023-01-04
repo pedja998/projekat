@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family:'Oswald', sans-serif;
+}
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+.nav-brand{
+    font-size: 1,5em;
+    font-weight: bold;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+
+}
+.text-center{
+    text-align: center;
+}
+.border-shadow{
+    border: 1px brown;
+    box-shadow: 1px 3px 10px burlywood;
+}
+.text-dark{
+    color: white;
+}
+.inline{
+    display: inline-block;
+}
+.text-light{
+    color: black;
+}
+.text-gradient{
+    color: red;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: red;
+}
+#header nav{
+    background-color: red;
+    padding: 1em 0;
+    width: 100%;
+    font-size: 2em;
+}
+#site-main{
+    margin-top: 6em;
+    font-family: 'PT Sans', sans-serif;
+}
+#site-main .container .box-nav>a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+#site-main .container form{
+    margin: 2em 0;
+}
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+.table td>a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+.table tr:hover{
+    background-color: red;
+}
+.table tr:hover td>a{
+    box-shadow: none;
+    background-color: white;
+}
+.table .thead-dark th{
+    color: white;
+    background-color: darkslategrey;
+    border-color: black;
+}
+.form-title{
+    margin-top: 2em;
+}
+.form-title>h2{
+    padding: .5em 0;
+}
+.new_player{
+    max-width: 786px;
+    margin: auto;
+}
+#update_player .form-group,
+#add_player .form-group{
+    margin: .4em 0;
+}
+#update_player .form-group input[type="text"],
+#add_player .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid gray;
+}
+#update_player .form-group .radio{
+    margin: 1em 2em;
+}
+#update_player .form-group .btn,
+#add_player .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color: red;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}

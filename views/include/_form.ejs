@@ -1,0 +1,44 @@
+<!--formhandling-->
+<form action="/api/players" method="POST" id="add_player">
+    <div class="new_player">
+        <div class="form-group">
+            <label for="ime" class="text-light">Ime</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="ime" value="" placeholder="Marko">
+        </div>
+        <div class="form-group">
+            <label for="prezime" class="text-light">Prezime</label>
+            <input type="text" name="prezime" value="" placeholder="Probic">
+        </div>
+        <div class="form-group">
+            <label for="datum" class="text-light">Datum rođenja</label>
+            <input type="text" name="datumR" value="" placeholder="1.1.1990">
+        </div>
+        <div class="form-group">
+            <label for="pozicija" class="text-light">Pozicija</label>
+            <div class="radio-inline">
+                <input type="radio" name="pozicija" value="PG">
+                <label for="pozicija" class="text-light">PG</label>
+                <input type="radio" name="pozicija" value="SG">
+                <label for="pozicija" class="text-light">SG</label>
+                <input type="radio" name="pozicija" value="SF">
+                <label for="pozicija" class="text-light">SF</label>
+                <input type="radio" name="pozicija" value="PF">
+                <label for="pozicija" class="text-light">PF</label>
+                <input type="radio" name="pozicija" value="C">
+                <label for="pozicija" class="text-light">C</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ugovorPocetak" class="text-light">Pocetak ugovora</label>
+            <input type="text" name="ugovorPocetak" value="" placeholder="1.1.2020">
+        </div>
+        <div class="form-group">
+            <label for="ugovorKraj" class="text-light">Kraj ugovora</label>
+            <input type="text" name="ugovorKraj" value="" placeholder="1.1.2024">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark-update">Sačuvaj</button>
+        </div>
+    </div>
+</form>

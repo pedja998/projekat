@@ -1,0 +1,19 @@
+<% for(var i = 0; i < players.length; i++) { %>
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= players[i].ime %></td>
+    <td><%= players[i].prezime %></td>
+    <td><%= players[i].datumR %></td>
+    <td><%= players[i].pozicija %></td>
+    <td><%= players[i].ugovorPocetak %></td>
+    <td><%= players[i].ugovorKraj %></td>
+    <td>
+        <a href="/update-player?id=<%= players[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= players[i]._id%> >
+            <span class="text-gradient"><i class="fas fa-ban"></i></span>
+        </a>
+    </td>
+</tr>
+<% } %>
